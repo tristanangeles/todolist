@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<html>
+   <body>
+    {% for task in tasks %}
+    <div class="task">
+        <a href="{% url 'detail' task.id %}">{{task.title}}</a>
+    </div>
+    {% endfor%}
+    
+    <a href="{% url 'new'%}">Add new Task</a>
+    
+   </body>
+    
+</html>

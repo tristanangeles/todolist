@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+    <head></head>
+    
+    <body>
+        <form action="{% url 'add' %}" method="post">
+            {%csrf_token%}
+            <label><b>Task Name</label><br>
+            <input type="text" name="title" id="title" value="title"/><br>
+            <label><b>Description</label><br>
+            <input type="textarea" maxlength=300 id="description" name="description" value="description"/><br>
+            <label><b>Start Date</label><br>
+            <input type="datetime"/><br>
+            <label><b>End Date</b></label><br>
+            <input type="datetime"/><br>
+            
+            
+            
+        </form>
+        <input type="submit" value="Create"/>
+    </body>
+</html>
